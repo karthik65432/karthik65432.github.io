@@ -140,9 +140,33 @@
         Traveler · Football Captain · Badminton Enthusiast — finding the rhythm between motion, curiosity, and precision.
       </p>
       <div class="flex flex-wrap gap-3 justify-center">
-        <a href="#experience" class="px-6 py-3 bg-brand-500 text-white rounded-full shadow-glow hover:bg-brand-600">View Career Path</a>
-        <a href="https://github.com/karthik65432" target="_blank" class="px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow">GitHub</a>
-        <a href="https://www.linkedin.com/in/karthik-k-2b8b4354/" target="_blank" class="px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow">LinkedIn</a>
+        <!-- Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<div class="flex flex-wrap gap-3 justify-center mt-6">
+  <a href="#experience"
+     class="inline-flex items-center gap-2 px-6 py-3 bg-brand-500 text-white rounded-full shadow-glow hover:bg-brand-600 transition">
+    <i data-lucide="briefcase" class="w-5 h-5"></i>
+    <span>View Career Path</span>
+  </a>
+
+  <a href="https://github.com/karthik65432" target="_blank"
+     class="inline-flex items-center gap-2 px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow transition">
+    <i data-lucide="github" class="w-5 h-5"></i>
+    <span>GitHub</span>
+  </a>
+
+  <a href="https://www.linkedin.com/in/karthik-k-2b8b4354/" target="_blank"
+     class="inline-flex items-center gap-2 px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow transition">
+    <i data-lucide="linkedin" class="w-5 h-5"></i>
+    <span>LinkedIn</span>
+  </a>
+</div>
+
+<script>
+  lucide.createIcons();
+</script>
+
       </div>
     </div>
   </header>
@@ -319,4 +343,3 @@
   </script>
 </body>
 </html>
-
