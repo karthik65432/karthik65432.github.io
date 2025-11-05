@@ -30,68 +30,70 @@
   </script>
 
   <style>
-    .typewriter span {
-      border-right:.1em solid #00bcd4;
-      white-space:nowrap;
-      overflow:hidden;
-      animation:typing 3s steps(40,end),blink .8s step-end infinite;
-    }
-    @keyframes typing{from{width:0}to{width:100%}}
-    @keyframes blink{50%{border-color:transparent}}
-    .nav-blur {backdrop-filter:saturate(180%) blur(8px); background: rgba(255,255,255,.72)}
-    .hobby-italic {font-family:'Playfair Display',serif; font-style:italic;}
+  .typewriter span {
+    border-right:.1em solid #00bcd4;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 3s steps(40,end),blink .8s step-end infinite;
+  }
+  @keyframes typing{from{width:0}to{width:100%}}
+  @keyframes blink{50%{border-color:transparent}}
+  .nav-blur {backdrop-filter:saturate(180%) blur(8px); background: rgba(255,255,255,.72)}
+  .hobby-italic {font-family:'Playfair Display',serif; font-style:italic;}
 
-    .ai-card {
-      background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(245,250,250,0.85));
-      border: 1px solid rgba(0,0,0,0.08);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      transition: all 0.35s ease-in-out;
-      backdrop-filter: blur(6px);
-    }
-    .ai-card:hover {
-      background: linear-gradient(145deg, #f7fcfc, #edf8f9);
-      transform: translateY(-6px);
-      box-shadow: 0 0 25px rgba(0,188,212,0.25), 0 6px 20px rgba(0,0,0,0.1);
-    }
+  /* ===== DARKER GREY CARD STYLE ===== */
+  .ai-card {
+    background: #e5e7eb; /* medium-light grey */
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.35s ease-in-out;
+    backdrop-filter: blur(6px);
+  }
+  .ai-card:hover {
+    background: #d1d5db; /* darker grey on hover */
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(0,188,212,0.2), 0 6px 20px rgba(0,0,0,0.1);
+  }
 
-    .roadmap {
-      position: relative;
-      margin-top: 3rem;
-      padding: 2rem 0;
-    }
-    .roadmap::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 4px;
-      height: 100%;
-      border-radius: 50%;
-      background: linear-gradient(180deg, rgba(0,188,212,0.4), rgba(0,188,212,0.1));
-      filter: blur(0.5px);
-      z-index: 0;
-    }
-    .roadmap-item {
-      position: relative;
-      width: 48%;
-      margin-bottom: 3rem;
-      z-index: 2;
-    }
-    .roadmap-item:nth-child(even) {margin-left: auto; transform: translateY(1rem);}
-    .roadmap-item:nth-child(odd) {transform: translateY(-1rem);}
-    .roadmap::after {
-      content: '';
-      position: absolute;
-      top: 5%;
-      left: 10%;
-      width: 80%;
-      height: 90%;
-      background: none;
-      border: 2px solid rgba(0,188,212,0.15);
-      border-radius: 100px 100px 120px 80px / 100px 100px 120px 80px;
-      z-index: 0;
-    }
-  </style>
+  .roadmap {
+    position: relative;
+    margin-top: 3rem;
+    padding: 2rem 0;
+  }
+  .roadmap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(0,188,212,0.4), rgba(0,188,212,0.1));
+    filter: blur(0.5px);
+    z-index: 0;
+  }
+  .roadmap-item {
+    position: relative;
+    width: 48%;
+    margin-bottom: 3rem;
+    z-index: 2;
+  }
+  .roadmap-item:nth-child(even) {margin-left: auto; transform: translateY(1rem);}
+  .roadmap-item:nth-child(odd) {transform: translateY(-1rem);}
+  .roadmap::after {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    background: none;
+    border: 2px solid rgba(0,188,212,0.15);
+    border-radius: 100px 100px 120px 80px / 100px 100px 120px 80px;
+    z-index: 0;
+  }
+</style>
+
 </head>
 
 <body class="bg-slate-50 text-slate-800">
@@ -107,8 +109,7 @@
         <li><a class="hover:text-brand-500" href="#education">Education</a></li>
         <li><a class="hover:text-brand-500" href="#experience">Experience</a></li>
         <li><a class="hover:text-brand-500" href="#awards">Awards</a></li>
-        <li><a c lass="hover:text-brand-500" href="#projects">Projects</a></li>
-
+        <li><a class="hover:text-brand-500" href="#projects">Projects</a></li>
       </ul>
     </div>
   </nav>
@@ -134,88 +135,185 @@
         I build next-generation AI systems that merge product vision, model design,<br class="hidden sm:block">
         and user empathy into scalable solutions.
       </div>
-
-
       <p class="hobby-italic text-slate-500 mb-6">
         Traveler · Football Captain · Badminton Enthusiast — finding the rhythm between motion, curiosity, and precision.
       </p>
-      <div class="flex flex-wrap gap-3 justify-center">
-<!-- Buttons with Image Icons -->
-<div class="flex flex-wrap gap-3 justify-center mt-6">
-  <!-- Career Path -->
-  <a href="#experience"
-     class="inline-flex items-center gap-2 px-6 py-3 bg-brand-500 text-white rounded-full shadow-glow hover:bg-brand-600 transition">
-    <img src="./assets/icons/business.png" alt="Career" class="w-5 h-5 brightness-0 invert" />
-    <span>View Career Path</span>
-  </a>
-
-  <!-- GitHub -->
-  <a href="https://github.com/karthik65432" target="_blank"
-     class="inline-flex items-center gap-2 px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow transition">
-    <img src="./assets/icons/github.png" alt="GitHub" class="w-5 h-5" />
-    <span>GitHub</span>
-  </a>
-
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/karthik-k-2b8b4354/" target="_blank"
-     class="inline-flex items-center gap-2 px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow transition">
-    <img src="./assets/icons/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
-    <span>LinkedIn</span>
-  </a>
-</div>
-
-
+      <div class="flex flex-wrap gap-3 justify-center mt-6">
+        <a href="#experience" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-500 text-white rounded-full shadow-glow hover:bg-brand-600 transition">
+          <img src="./assets/icons/business.png" alt="Career" class="w-5 h-5 brightness-0 invert" />
+          <span>View Career Path</span>
+        </a>
+        <a href="https://github.com/karthik65432" target="_blank"
+           class="inline-flex items-center gap-2 px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow transition">
+          <img src="./assets/icons/github.png" alt="GitHub" class="w-5 h-5" />
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/karthik-k-2b8b4354/" target="_blank"
+           class="inline-flex items-center gap-2 px-6 py-3 border border-slate-300 rounded-full hover:shadow-glow transition">
+          <img src="./assets/icons/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
+          <span>LinkedIn</span>
+        </a>
       </div>
     </div>
   </header>
 
   <!-- Skills -->
-  <section id="skills" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-center">Technical Skills</h2>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Python</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Machine Learning</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">SQL</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Tableau</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Generative AI</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Agentic AI / Workflows</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Optimization</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Azure / Cloud</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Statistics</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">NLP</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">MS Excel</div>
-      <div class="ai-card p-5 rounded-2xl text-center font-semibold">Deep Learning</div>
+<section id="skills" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-center">Technical Skills</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/python.png" alt="Python" class="w-8 h-8">
+      <span>Python</span>
     </div>
-  </section>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/machine-learning.png" alt="Machine Learning" class="w-8 h-8">
+      <span>Machine Learning</span>
+    </div>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/genai.png" alt="Generative AI" class="w-8 h-8">
+      <span>Generative AI</span>
+    </div>
+
+    
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/agent.png" alt="Agentic AI" class="w-8 h-8">
+      <span>Agentic AI / Workflows</span>
+    </div>
+
+
+     <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/cloud.png" alt="Azure / Cloud" class="w-8 h-8">
+      <span>Azure / Cloud</span>
+    </div>
+    
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/deep-learning.png" alt="Deep Learning" class="w-8 h-8">
+      <span>Deep Learning</span>
+    </div>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/optimization.png" alt="Optimization" class="w-8 h-8">
+      <span>Optimization</span>
+    </div>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/sql.png" alt="SQL" class="w-8 h-8">
+      <span>SQL</span>
+    </div>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/tableau.png" alt="Tableau" class="w-8 h-8">
+      <span>Tableau</span>
+    </div>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/statistics.png" alt="Statistics" class="w-8 h-8">
+      <span>Statistics</span>
+    </div>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/nlp.png" alt="NLP" class="w-8 h-8">
+      <span>NLP</span>
+    </div>
+
+    <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
+      <img src="./assets/icons/excel.png" alt="MS Excel" class="w-8 h-8">
+      <span>MS Excel</span>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- Education -->
 <section id="education" class="max-w-6xl mx-auto px-4 py-16 relative">
-  <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-center">Education & Languages</h2>
-  <div class="roadmap">
-    <div class="roadmap-item ai-card p-6 rounded-2xl">
-      <h3 class="font-semibold text-lg">Praxis Business School, Kolkata</h3>
-      <p class="text-sm text-slate-500">2019 – 2020</p>
-      <p>Post Graduate Program in Data Science</p>
-      <p class="mt-2 text-emerald-600 text-sm font-medium">🏆 Best Performer of the Batch</p>
-    </div>
-    <div class="roadmap-item ai-card p-6 rounded-2xl">
-      <h3 class="font-semibold text-lg">Anna University, Chennai</h3>
-      <p class="text-sm text-slate-500">2011 – 2015</p>
-      <p>B.E. — Instrumentation & Control Engineering</p>
-    </div>
-    <div class="roadmap-item ai-card p-6 rounded-2xl">
-      <h3 class="font-semibold text-lg">Kendriya Vidyalaya, Coimbatore</h3>
-      <p class="text-sm text-slate-500">2008 – 2011</p>
-      <p>High School</p>
-    </div>
-    <div class="roadmap-item ai-card p-6 rounded-2xl">
-      <h3 class="font-semibold text-lg">Bharatiya Vidya Bhavan, Thrissur</h3>
-      <p class="text-sm text-slate-500">2000 – 2007</p>
-      <p>Primary Education</p>
-    </div>
-    <div class="roadmap-item ai-card p-6 rounded-2xl">
-      <h3 class="font-semibold text-lg">Languages</h3>
-      <p>English · Tamil · Malayalam · Hindi</p>
+  <h2 class="font-display text-3xl md:text-4xl font-bold mb-12 text-center">Education & Languages</h2>
+
+  <div class="relative">
+    <!-- connecting line -->
+    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-slate-200 h-full"></div>
+
+    <div class="space-y-16">
+      
+      <!-- Praxis -->
+      <div class="flex flex-col md:flex-row items-center md:justify-start md:gap-8 relative">
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bg-brand-500 w-4 h-4 rounded-full"></div>
+        <div class="ai-card border border-slate-200 bg-slate-50 rounded-2xl shadow-sm p-6 md:w-[45%] text-left">
+          <div class="flex items-center gap-4 mb-3">
+            <img src="./assets/icons/praxis.png" alt="Praxis Business School" class="w-14 h-14 rounded-md border border-slate-300 p-1 bg-white">
+            <div>
+              <h3 class="font-semibold text-lg text-slate-800">Praxis Business School, Kolkata</h3>
+              <p class="text-sm text-slate-500">2019 – 2020</p>
+            </div>
+          </div>
+          <p>Post Graduate Program in Data Science</p>
+          <p class="mt-2 text-emerald-600 text-sm font-medium">🏆 Best Performer of the Batch</p>
+        </div>
+      </div>
+
+      <!-- Anna University -->
+      <div class="flex flex-col md:flex-row items-center md:justify-end md:gap-8 relative">
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bg-brand-500 w-4 h-4 rounded-full"></div>
+        <div class="ai-card border border-slate-200 bg-slate-50 rounded-2xl shadow-sm p-6 md:w-[45%] text-left">
+          <div class="flex items-center gap-4 mb-3">
+            <img src="./assets/icons/anna_university.jpg" alt="Anna University" class="w-14 h-14 rounded-md border border-slate-300 p-1 bg-white">
+            <div>
+              <h3 class="font-semibold text-lg text-slate-800">Anna University, Chennai</h3>
+              <p class="text-sm text-slate-500">2011 – 2015</p>
+            </div>
+          </div>
+          <p>B.E. Instrumentation & Control Engineering</p>
+        </div>
+      </div>
+
+      <!-- Kendriya Vidyalaya -->
+      <div class="flex flex-col md:flex-row items-center md:justify-start md:gap-8 relative">
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bg-brand-500 w-4 h-4 rounded-full"></div>
+        <div class="ai-card border border-slate-200 bg-slate-50 rounded-2xl shadow-sm p-6 md:w-[45%] text-left">
+          <div class="flex items-center gap-4 mb-3">
+            <img src="./assets/icons/kv.png" alt="Kendriya Vidyalaya" class="w-14 h-14 rounded-md border border-slate-300 p-1 bg-white">
+            <div>
+              <h3 class="font-semibold text-lg text-slate-800">Kendriya Vidyalaya, Coimbatore</h3>
+              <p class="text-sm text-slate-500">2008 – 2011</p>
+            </div>
+          </div>
+          <p>High School</p>
+        </div>
+      </div>
+
+      <!-- Bharatiya Vidya Bhavan -->
+      <div class="flex flex-col md:flex-row items-center md:justify-end md:gap-8 relative">
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bg-brand-500 w-4 h-4 rounded-full"></div>
+        <div class="ai-card border border-slate-200 bg-slate-50 rounded-2xl shadow-sm p-6 md:w-[45%] text-left">
+          <div class="flex items-center gap-4 mb-3">
+            <img src="./assets/icons/bvb.png" alt="Bharatiya Vidya Bhavan" class="w-20 h-16 rounded-md border border-slate-300 p-1 bg-white">
+            <div>
+              <h3 class="font-semibold text-lg text-slate-800">Bharatiya Vidya Bhavan, Thrissur</h3>
+              <p class="text-sm text-slate-500">2000 – 2007</p>
+            </div>
+          </div>
+          <p>Primary Education</p>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="flex flex-col md:flex-row items-center md:justify-start md:gap-8 relative">
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 bg-brand-500 w-4 h-4 rounded-full"></div>
+        <div class="ai-card border border-slate-200 bg-slate-50 rounded-2xl shadow-sm p-6 md:w-[45%] text-left">
+          <div class="flex items-center gap-4 mb-3">
+            <img src="./assets/icons/language.png" alt="Languages" class="w-12 h-12 rounded-md border border-slate-300 p-1 bg-white">
+            <div>
+              <h3 class="font-semibold text-lg text-slate-800">Languages</h3>
+            </div>
+          </div>
+          <p>English · Tamil · Malayalam · Hindi</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -225,84 +323,109 @@
   <h2 class="font-display text-3xl md:text-4xl font-bold mb-12 text-center">Experience</h2>
 
   <div class="grid md:grid-cols-3 gap-10 justify-items-center">
-    <!-- Row 1 -->
+
+    <!-- AB InBev -->
     <div class="ai-card p-10 rounded-3xl shadow-deep w-full h-full max-w-sm text-center flex flex-col justify-between">
-      <div>
+      <div class="flex flex-col items-center">
+        <img src="./assets/icons/abinbev.png" alt="AB InBev" class="w-20 h-20 mb-5 rounded-lg object-contain">
         <h3 class="text-2xl font-bold text-slate-900 mb-2">AB InBev Pvt Ltd</h3>
         <p class="text-sm text-slate-500 mb-4">Aug 2022 – Present | Data Scientist</p>
-        <p>Leading GenAI initiatives in retail optimization, planogram intelligence, and multimodal data reasoning 
-        — driving measurable multimillion-dollar outcomes across markets.</p>
+        <p>Leading GenAI initiatives in retail optimization, planogram intelligence, and multimodal data reasoning — driving measurable multimillion-dollar outcomes across markets.</p>
       </div>
     </div>
 
+    <!-- Accenture -->
     <div class="ai-card p-10 rounded-3xl shadow-deep w-full h-full max-w-sm text-center flex flex-col justify-between">
-      <div>
+      <div class="flex flex-col items-center">
+        <img src="./assets/icons/acn.png" alt="Accenture" class="w-20 h-20 mb-5 rounded-lg object-contain">
         <h3 class="text-2xl font-bold text-slate-900 mb-2">Accenture Pvt Ltd (S&amp;C)</h3>
         <p class="text-sm text-slate-500 mb-4">Jun 2021 – Aug 2022 | Data Science Consultant</p>
-        <p>Built AI-driven insight platforms using NLP, Quid, and Talkwalker; enabled market share intelligence 
-        and automated brand positioning analytics.</p>
+        <p>Built AI-driven insight platforms using NLP, Quid, and Talkwalker; enabled market share intelligence and automated brand positioning analytics.</p>
       </div>
     </div>
 
+    <!-- Equifax -->
     <div class="ai-card p-10 rounded-3xl shadow-deep w-full h-full max-w-sm text-center flex flex-col justify-between">
-      <div>
+      <div class="flex flex-col items-center">
+        <img src="./assets/icons/equifax.png" alt="Equifax" class="w-20 h-20 mb-5 rounded-lg object-contain">
         <h3 class="text-2xl font-bold text-slate-900 mb-2">Equifax Analytics Pvt Ltd</h3>
         <p class="text-sm text-slate-500 mb-4">Dec 2020 – Jun 2021 | Analytics Consultant</p>
         <p>Developed automation pipelines for scorecard validation and reporting using Python, SQL, and Tableau.</p>
       </div>
     </div>
 
-    <!-- Row 2 (centered) -->
+    <!-- Row 2 -->
     <div class="md:col-span-3 flex justify-center gap-10 mt-10 flex-wrap">
-      <div class="ai-card p-10 rounded-3xl shadow-deep w-full h-full max-w-sm text-center flex flex-col justify-between">
-        <div>
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">Tata Consultancy Services Ltd</h3>
-          <p class="text-sm text-slate-500 mb-4">Feb 2016 – Nov 2020 | Data Scientist</p>
-          <p>Developed explainable ML systems for banking risk modeling, integrating XAI components and time-series analytics for better transparency.</p>
-        </div>
-      </div>
 
-      <div class="ai-card p-10 rounded-3xl shadow-deep w-full h-full max-w-sm text-center flex flex-col justify-between">
-        <div>
-          <h3 class="text-2xl font-bold text-slate-900 mb-2">Kabbage Inc.</h3>
-          <p class="text-sm text-slate-500 mb-4">Nov 2019 – Feb 2020 | Decision Analyst (Intern)</p>
-          <p>Applied AI-driven segmentation and behavior prediction for SME lending; 
-          designed Tableau dashboards powered by automated data pipelines.</p>
-        </div>
-      </div>
+ <!-- TCS -->
+<div class="ai-card p-10 rounded-3xl shadow-deep w-full h-full max-w-sm text-center flex flex-col justify-between">
+  <div class="flex flex-col items-center">
+    <img src="./assets/icons/tcs.png" alt="Tata Consultancy Services"
+         class="mb-2 rounded-lg object-contain" style="width:10rem; height:10rem;">
+    <h3 class="text-2xl font-bold text-slate-900 mb-2">Tata Consultancy Services Ltd</h3>
+    <p class="text-sm text-slate-500 mb-4">Feb 2016 – Nov 2020 | Data Scientist</p>
+    <p>Developed explainable ML systems for banking risk modeling, integrating XAI components and time-series analytics for better transparency.</p>
+  </div>
+</div>
+
+<!-- Kabbage -->
+<div class="ai-card p-10 rounded-3xl shadow-deep w-full h-full max-w-sm text-center flex flex-col justify-between">
+  <div class="flex flex-col items-center">
+    <img src="./assets/icons/kabbage.png" alt="Kabbage"
+         class="mb-2 rounded-lg object-contain" style="width:10rem; height:10rem;">
+    <h3 class="text-2xl font-bold text-slate-900 mb-2">Kabbage Inc.</h3>
+    <p class="text-sm text-slate-500 mb-4">Nov 2019 – Feb 2020 | Decision Analyst (Intern)</p>
+    <p>Applied AI-driven segmentation and behavior prediction for SME lending; designed Tableau dashboards powered by automated data pipelines.</p>
+  </div>
+</div>
+
+
     </div>
   </div>
 </section>
 
 
+
+
   <!-- Awards -->
-  <section id="awards" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-center">Awards</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="ai-card p-6 rounded-2xl">
-        <h3 class="font-semibold">Tech Visionary Quarterly Award</h3>
-        <p class="text-sm text-slate-500">May 2025</p>
-        <p class="text-sm mt-2">Novel solution for test–control store matching using Genetic Algorithms.</p>
-      </div>
-      <div class="ai-card p-6 rounded-2xl">
-        <h3 class="font-semibold">Pint Award</h3>
-        <p class="text-sm text-slate-500">May 2025</p>
-        <p class="text-sm mt-2">Recognition for Science Driven Enhancements in Space Optimization.</p>
-      </div>
-      <div class="ai-card p-6 rounded-2xl">
-        <h3 class="font-semibold">Pint Award</h3>
-        <p class="text-sm text-slate-500">Oct 2025</p>
-        <p class="text-sm mt-2">Extensive contributions to product and GenAI advancements.</p>
-      </div>
+<section id="awards" class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-center">Awards</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="ai-card p-6 rounded-2xl text-center flex flex-col items-center">
+      <img src="./assets/icons/award.png" alt="Award" class="w-10 h-10 mb-3">
+      <h3 class="font-semibold">Tech Visionary Quarterly Award</h3>
+      <p class="text-sm text-slate-500">May 2025</p>
+      <p class="text-sm mt-2">Novel solution for test–control store matching using Genetic Algorithms.</p>
     </div>
-  </section>
+
+    <div class="ai-card p-6 rounded-2xl text-center flex flex-col items-center">
+      <img src="./assets/icons/award.png" alt="Award" class="w-10 h-10 mb-3">
+      <h3 class="font-semibold">Pint Award</h3>
+      <p class="text-sm text-slate-500">May 2025</p>
+      <p class="text-sm mt-2">Recognition for Science Driven Enhancements in Space Optimization.</p>
+    </div>
+
+    <div class="ai-card p-6 rounded-2xl text-center flex flex-col items-center">
+      <img src="./assets/icons/award.png" alt="Award" class="w-10 h-10 mb-3">
+      <h3 class="font-semibold">Pint Award</h3>
+      <p class="text-sm text-slate-500">Oct 2025</p>
+      <p class="text-sm mt-2">Extensive contributions to product and GenAI advancements.</p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Projects -->
 <section id="projects" class="max-w-6xl mx-auto px-4 py-16">
   <h2 class="font-display text-3xl md:text-4xl font-bold mb-8 text-center">Projects</h2>
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <div class="ai-card p-6 rounded-2xl">
+    <!-- Project 1 -->
+    <div class="ai-card p-6 rounded-2xl overflow-hidden">
+      <img src="./assets/icons/p1.png" alt="GenAI Space Optimization Engine" 
+           class="w-full h-48 object-cover rounded-xl mb-4">
       <h3 class="font-semibold text-lg">GenAI Space Optimization Engine</h3>
       <p class="text-sm text-slate-500 mt-2">
         Hybrid optimization and LLM-based reasoning engine that merges shelf-space constraints, sales data, and product semantics to maximize retail ROI. 
@@ -310,15 +433,20 @@
       </p>
     </div>
 
-    <div class="ai-card p-6 rounded-2xl">
-      <h3 class="font-semibold text-lg">Whatsapp Automation Agent</h3>
+    <!-- Project 2 -->
+    <div class="ai-card p-6 rounded-2xl overflow-hidden">
+      <img src="./assets/icons/p2.png" alt="WhatsApp Automation Agent" 
+           class="w-full h-48 object-cover rounded-xl mb-4">
+      <h3 class="font-semibold text-lg">WhatsApp Automation Agent</h3>
       <p class="text-sm text-slate-500 mt-2">
         Autonomous GenAI agent orchestrating WhatsApp menu broadcasts, reply parsing, and billing workflows — designed to bypass Meta heuristics while maintaining human-like contextual responses.
       </p>
     </div>
 
-
-    <div class="ai-card p-6 rounded-2xl">
+    <!-- Project 3 -->
+    <div class="ai-card p-6 rounded-2xl overflow-hidden">
+      <img src="./assets/icons/p3.png" alt="Zerodha Trading Agent" 
+           class="w-full h-48 object-cover rounded-xl mb-4">
       <h3 class="font-semibold text-lg">Zerodha Trading Agent</h3>
       <p class="text-sm text-slate-500 mt-2">
         Agentic GenAI model combining market sentiment, news signals, annual report fundamentals with Zerodha APIs to autonomously suggest or execute high-confidence trades.
@@ -327,6 +455,7 @@
 
   </div>
 </section>
+
 
 
   <footer class="text-center py-10 text-sm text-slate-500">© <span id="year"></span> Karthik K — Designed & built with AI, creativity, and code.</footer>
@@ -341,4 +470,5 @@
   </script>
 </body>
 </html>
+
 
