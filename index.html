@@ -140,9 +140,17 @@
         Traveler · Football Captain · Badminton Enthusiast — finding the rhythm between motion, curiosity, and precision.
       </p>
       <div class="flex flex-wrap gap-3 justify-center">
-        <!-- Icons CDN -->
-<script src="https://unpkg.com/lucide@latest"></script>
+<!-- ✅ Load Lucide safely -->
+<script>
+  const lucideScript = document.createElement("script");
+  lucideScript.src = "https://unpkg.com/lucide@latest";
+  lucideScript.onload = () => {
+    lucide.createIcons();
+  };
+  document.head.appendChild(lucideScript);
+</script>
 
+<!-- Buttons with Lucide icons -->
 <div class="flex flex-wrap gap-3 justify-center mt-6">
   <a href="#experience"
      class="inline-flex items-center gap-2 px-6 py-3 bg-brand-500 text-white rounded-full shadow-glow hover:bg-brand-600 transition">
@@ -163,9 +171,6 @@
   </a>
 </div>
 
-<script>
-  lucide.createIcons();
-</script>
 
       </div>
     </div>
@@ -343,3 +348,4 @@
   </script>
 </body>
 </html>
+
