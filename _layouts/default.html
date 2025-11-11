@@ -8,10 +8,29 @@
 
   {% include navbar.html %}
 
+  <!-- Profile -->
+  <section id="profile" class="max-w-6xl mx-auto px-4 pb-1 text-center">
+    <div class="flex flex-col items-center">
+      <div class="relative group">
+        <img src="/assets/icons/karthik_passport.jpg"
+             alt="Karthik K"
+             class="w-44 h-44 rounded-full object-cover shadow-glow border-4 border-white transition-transform duration-500 group-hover:scale-105" />
+        <div class="absolute inset-0 rounded-full ring-2 ring-brand-500 ring-offset-2 ring-offset-slate-50 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      </div>
+      <h2 class="mt-5 text-3xl font-display font-bold">Karthik K</h2>
+      <p class="text-slate-600 text-base mt-0.5">GenAI Engineer · Product Manager · Design Thinker</p>
+    </div>
+  </section>
+
   <main class="max-w-6xl mx-auto px-4 py-10">
     {{ content }}
   </main>
 
   {% include footer.html %}
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
