@@ -8,7 +8,7 @@ url: "https://karthik65432.github.io"
 theme: null
 markdown: kramdown
 include:
-  - README.md
+  - index.md
 
 plugins:
   - jekyll-seo-tag
