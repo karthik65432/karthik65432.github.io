@@ -1,0 +1,24 @@
+- name: Python
+  icon: python.png
+- name: Machine Learning
+  icon: machine-learning.png
+- name: Generative AI
+  icon: genai.png
+- name: Agentic AI / Workflows
+  icon: agent.png
+- name: Azure / Cloud
+  icon: cloud.png
+- name: Deep Learning
+  icon: deep-learning.png
+- name: Optimization
+  icon: optimization.png
+- name: SQL
+  icon: sql.png
+- name: Tableau
+  icon: tableau.png
+- name: Statistics
+  icon: statistics.png
+- name: NLP
+  icon: nlp.png
+- name: MS Excel
+  icon: excel.png
