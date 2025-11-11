@@ -1,0 +1,11 @@
+- title: GenAI Space Optimization Engine
+  description: Hybrid optimization and LLM-based reasoning engine that merges shelf-space constraints, sales data, and product semantics to maximize retail ROI.
+  image: p1.png
+
+- title: WhatsApp Automation Agent
+  description: Autonomous GenAI agent orchestrating WhatsApp menu broadcasts, reply parsing, and billing workflows — designed to bypass Meta heuristics while maintaining human-like contextual responses.
+  image: p2.png
+
+- title: Zerodha Trading Agent
+  description: Agentic GenAI model combining market sentiment, news signals, annual report fundamentals with Zerodha APIs to autonomously suggest or execute high-confidence trades.
+  image: p3.png
