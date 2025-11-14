@@ -54,7 +54,7 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
             <!-- Floating badge -->
             <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-strong p-6 border border-slate-100">
               <div class="text-center">
-                <div class="text-3xl font-bold text-brand-600">5+</div>
+                <div class="text-3xl font-bold text-brand-600">9+</div>
                 <div class="text-sm text-slate-600 font-medium">Years Experience</div>
               </div>
             </div>
