@@ -89,9 +89,9 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
       </p>
     </div>
     
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center" style="perspective: 1000px;">
+    <div class="flex flex-wrap justify-center gap-6" style="perspective: 1000px;">
       {% for job in site.data.experience %}
-      <div class="modern-card group cursor-pointer scroll-reveal w-full max-w-md" style="transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);" onmouseenter="this.style.transform='translateZ(40px) rotateX(5deg) rotateY(5deg)'" onmouseleave="this.style.transform='translateZ(0) rotateX(0) rotateY(0)'">
+      <div class="modern-card group cursor-pointer scroll-reveal" style="flex: 0 0 calc(33.333% - 1rem); max-width: 400px; min-width: 300px; transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);" onmouseenter="this.style.transform='translateZ(40px) rotateX(5deg) rotateY(5deg)'" onmouseleave="this.style.transform='translateZ(0) rotateX(0) rotateY(0)'">
         <!-- Company Logo -->
         <div class="w-36 h-36 mb-6 p-4 bg-slate-50 rounded-2xl group-hover:bg-brand-50 transition-colors">
           <img src="/assets/icons/{{ job.logo }}" 
