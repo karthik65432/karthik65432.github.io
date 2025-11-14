@@ -5,28 +5,28 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
 
 <!-- Hero Section - Side by Side Layout -->
 <section class="min-h-screen flex items-center py-20 px-4 relative overflow-hidden">
-  <!-- Two Triangle Pastel Background -->
+  <!-- Two Triangle Pastel Background - Full Screen -->
   <div class="absolute inset-0 -z-10">
-    <!-- Top-right triangle (blue-purple) -->
-    <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Top-right triangle (blue-purple) - covers entire top-right half -->
+    <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="topTriangle" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.6" />
-          <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:0.4" />
+          <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.8" />
+          <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:0.6" />
         </linearGradient>
       </defs>
-      <polygon points="100,0 100,0 100,100 0,0" fill="url(#topTriangle)" transform="scale(1)" />
+      <polygon points="0,0 100,0 100,100" fill="url(#topTriangle)" />
     </svg>
     
-    <!-- Bottom-left triangle (purple-pink) -->
-    <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Bottom-left triangle (purple-pink) - covers entire bottom-left half -->
+    <svg class="absolute top-0 left-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="bottomTriangle" x1="0%" y1="100%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#fae8ff;stop-opacity:0.5" />
-          <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:0.3" />
+          <stop offset="0%" style="stop-color:#fae8ff;stop-opacity:0.7" />
+          <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:0.5" />
         </linearGradient>
       </defs>
-      <polygon points="0,100 0,100 0,0 100,100" fill="url(#bottomTriangle)" transform="scale(1)" />
+      <polygon points="0,0 0,100 100,100" fill="url(#bottomTriangle)" />
     </svg>
   </div>
   
