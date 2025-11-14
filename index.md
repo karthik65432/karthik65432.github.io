@@ -93,7 +93,7 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
       {% for job in site.data.experience %}
       <div class="modern-card group cursor-pointer scroll-reveal" style="transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);" onmouseenter="this.style.transform='translateZ(40px) rotateX(5deg) rotateY(5deg)'" onmouseleave="this.style.transform='translateZ(0) rotateX(0) rotateY(0)'">
         <!-- Company Logo -->
-        <div class="w-16 h-16 mb-6 p-3 bg-slate-50 rounded-2xl group-hover:bg-brand-50 transition-colors">
+        <div class="w-32 h-32 mb-6 p-4 bg-slate-50 rounded-2xl group-hover:bg-brand-50 transition-colors">
           <img src="/assets/icons/{{ job.logo }}" 
                alt="{{ job.company }}" 
                class="w-full h-full object-contain" />
@@ -162,14 +162,15 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
     <div class="grid md:grid-cols-3 gap-6">
       {% for award in site.data.awards %}
       <div class="modern-card text-center group scroll-reveal">
-        <div class="w-20 h-20 mx-auto mb-6 p-5 bg-gradient-to-br from-brand-500 to-brand-600 rounded-2xl shadow-glow group-hover:scale-110 transition-transform">
+        <div class="w-26 h-26 mx-auto mb-6 p-6 bg-white rounded-2xl shadow-glow group-hover:scale-110 transition-transform border-2 border-amber-400">
           <img src="/assets/icons/{{ award.icon }}" 
                alt="{{ award.name }}" 
-               class="w-full h-full brightness-0 invert" />
+               class="w-full h-full" 
+               style="filter: invert(62%) sepia(98%) saturate(1613%) hue-rotate(359deg) brightness(101%) contrast(101%);" />
         </div>
         
         <h3 class="text-xl font-bold text-slate-900 mb-2">{{ award.name }}</h3>
-        <div class="text-brand-600 font-medium mb-3">{{ award.date }}</div>
+        <div class="text-amber-600 font-medium mb-3">{{ award.date }}</div>
         <p class="text-slate-600 leading-relaxed">{{ award.description }}</p>
       </div>
       {% endfor %}
