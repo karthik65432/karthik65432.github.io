@@ -10,8 +10,8 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
       
       <!-- Left: Text Content -->
       <div class="space-y-6 scroll-reveal">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-slate-900 leading-tight">
-          Hi, I'm <span class="gradient-text typewriter-text" id="typewriter-name">Karthik K</span>
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-slate-900 leading-tight flex items-baseline flex-wrap">
+          <span>Hi, I'm&nbsp;</span><span class="gradient-text typewriter-text" id="typewriter-name">Karthik K</span>
         </h1>
         
         <p class="text-2xl md:text-3xl text-brand-600 font-semibold">
