@@ -4,7 +4,13 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
 ---
 
 <!-- Hero Section - Side by Side Layout -->
-<section class="min-h-screen flex items-center py-20 px-4">
+<section class="min-h-screen flex items-center py-20 px-4 relative overflow-hidden">
+  <!-- Subtle Pastel Gradient Background -->
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-blue-50/40 via-transparent to-transparent"></div>
+    <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-tr from-purple-50/30 via-transparent to-transparent"></div>
+  </div>
+  
   <div class="max-w-7xl mx-auto w-full">
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
       
