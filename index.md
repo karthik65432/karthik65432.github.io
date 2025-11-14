@@ -9,11 +9,7 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
     <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
       
       <!-- Left: Text Content -->
-      <div class="space-y-8 scroll-reveal">
-        <div class="inline-block px-4 py-2 bg-brand-50 rounded-full text-brand-600 text-sm font-semibold mb-4">
-          👋 Welcome to my portfolio
-        </div>
-        
+      <div class="space-y-6 scroll-reveal">
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-slate-900 leading-tight">
           Hi, I'm <span class="gradient-text">Karthik K</span>
         </h1>
@@ -23,7 +19,7 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
         </p>
         
         <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
-          I build next-generation AI systems that merge product vision, model design, and user empathy into scalable solutions.
+          With <span class="font-semibold text-brand-600">9+ years of experience</span>, I build next-generation AI systems that merge product vision, model design, and user empathy into scalable solutions.
         </p>
         
         <div class="flex flex-wrap gap-4 pt-4">
@@ -49,14 +45,6 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
               <img src="/assets/icons/karthik_passport.jpg" 
                    alt="Karthik K" 
                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-            
-            <!-- Floating badge -->
-            <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-strong p-6 border border-slate-100">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-brand-600">9+</div>
-                <div class="text-sm text-slate-600 font-medium">Years Experience</div>
-              </div>
             </div>
           </div>
         </div>
@@ -101,9 +89,9 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
       </p>
     </div>
     
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" style="perspective: 1000px;">
       {% for job in site.data.experience %}
-      <div class="modern-card group cursor-pointer scroll-reveal">
+      <div class="modern-card group cursor-pointer scroll-reveal" style="transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);" onmouseenter="this.style.transform='translateZ(40px) rotateX(5deg) rotateY(5deg)'" onmouseleave="this.style.transform='translateZ(0) rotateX(0) rotateY(0)'">
         <!-- Company Logo -->
         <div class="w-16 h-16 mb-6 p-3 bg-slate-50 rounded-2xl group-hover:bg-brand-50 transition-colors">
           <img src="/assets/icons/{{ job.logo }}" 
@@ -215,12 +203,12 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
           </h3>
           <p class="text-slate-600 leading-relaxed">{{ project.description }}</p>
           
-          <div class="mt-4 flex items-center text-brand-600 font-semibold group-hover:gap-2 transition-all">
+          <a href="#contact" class="mt-4 flex items-center text-brand-600 font-semibold group-hover:gap-2 transition-all">
             <span>Learn more</span>
             <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       {% endfor %}
@@ -240,12 +228,20 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
       </p>
       
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="mailto:your.email@example.com" 
+        <a href="mailto:karthik65432@gmail.com" 
            class="px-8 py-4 bg-brand-600 text-white rounded-full font-semibold hover:bg-brand-700 transition-all hover:scale-105 shadow-medium flex items-center gap-2">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
           </svg>
           <span>Email Me</span>
+        </a>
+        <a href="https://github.com/karthik65432" 
+           target="_blank"
+           class="px-8 py-4 bg-white text-slate-700 border-2 border-slate-200 rounded-full font-semibold hover:border-brand-600 hover:text-brand-600 transition-all hover:scale-105 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
         </a>
         <a href="https://linkedin.com" 
            target="_blank"
