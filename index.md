@@ -5,10 +5,29 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
 
 <!-- Hero Section - Side by Side Layout -->
 <section class="min-h-screen flex items-center py-20 px-4 relative overflow-hidden">
-  <!-- Subtle Pastel Gradient Background -->
+  <!-- Two Triangle Pastel Background -->
   <div class="absolute inset-0 -z-10">
-    <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-blue-50/40 via-transparent to-transparent"></div>
-    <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-tr from-purple-50/30 via-transparent to-transparent"></div>
+    <!-- Top-right triangle (blue-purple) -->
+    <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="topTriangle" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.6" />
+          <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:0.4" />
+        </linearGradient>
+      </defs>
+      <polygon points="100,0 100,0 100,100 0,0" fill="url(#topTriangle)" transform="scale(1)" />
+    </svg>
+    
+    <!-- Bottom-left triangle (purple-pink) -->
+    <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bottomTriangle" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#fae8ff;stop-opacity:0.5" />
+          <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:0.3" />
+        </linearGradient>
+      </defs>
+      <polygon points="0,100 0,100 0,0 100,100" fill="url(#bottomTriangle)" transform="scale(1)" />
+    </svg>
   </div>
   
   <div class="max-w-7xl mx-auto w-full">
