@@ -89,11 +89,11 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
       </p>
     </div>
     
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" style="perspective: 1000px;">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center" style="perspective: 1000px;">
       {% for job in site.data.experience %}
-      <div class="modern-card group cursor-pointer scroll-reveal" style="transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);" onmouseenter="this.style.transform='translateZ(40px) rotateX(5deg) rotateY(5deg)'" onmouseleave="this.style.transform='translateZ(0) rotateX(0) rotateY(0)'">
+      <div class="modern-card group cursor-pointer scroll-reveal w-full max-w-md" style="transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);" onmouseenter="this.style.transform='translateZ(40px) rotateX(5deg) rotateY(5deg)'" onmouseleave="this.style.transform='translateZ(0) rotateX(0) rotateY(0)'">
         <!-- Company Logo -->
-        <div class="w-32 h-32 mb-6 p-4 bg-slate-50 rounded-2xl group-hover:bg-brand-50 transition-colors">
+        <div class="w-36 h-36 mb-6 p-4 bg-slate-50 rounded-2xl group-hover:bg-brand-50 transition-colors">
           <img src="/assets/icons/{{ job.logo }}" 
                alt="{{ job.company }}" 
                class="w-full h-full object-contain" />
@@ -162,7 +162,7 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
     <div class="grid md:grid-cols-3 gap-6">
       {% for award in site.data.awards %}
       <div class="modern-card text-center group scroll-reveal">
-        <div class="w-26 h-26 mx-auto mb-6 p-6 bg-white rounded-2xl shadow-glow group-hover:scale-110 transition-transform border-2 border-amber-400">
+        <div class="w-13 h-13 mx-auto mb-6 p-3 bg-white rounded-2xl shadow-glow group-hover:scale-110 transition-transform border-2 border-amber-400">
           <img src="/assets/icons/{{ award.icon }}" 
                alt="{{ award.name }}" 
                class="w-full h-full" 
