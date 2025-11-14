@@ -9,7 +9,10 @@ I build next-generation AI systems that merge product vision, model design, and 
 
 ---
 
-## 🧠 Skills
+<h2 class="font-display text-4xl md:text-5xl font-extrabold mb-10 text-center text-slate-800 tracking-tight">
+  🧠 Skills
+</h2>
+
 <div id="skills" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
 {% for skill in site.data.skills %}
   <div class="ai-card p-5 rounded-2xl text-center font-semibold flex flex-col items-center gap-2">
