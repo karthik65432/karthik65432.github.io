@@ -9,7 +9,7 @@ I build next-generation AI systems that merge product vision, model design, and 
 
 ---
 
-<h2 class="font-display text-4xl md:text-5xl font-extrabold mb-10 text-center text-slate-800 tracking-tight">
+<h2 class="section-title mt-16 mb-8">
   🧠 Skills
 </h2>
 
@@ -24,7 +24,9 @@ I build next-generation AI systems that merge product vision, model design, and 
 
 ---
 
-## 🎓 Education & Languages
+<h2 class="section-title mt-16 mb-8">
+  🎓 Education & Languages
+</h2>
 <div id="education" class="space-y-10 mt-10">
 {% for edu in site.data.education %}
   <div class="ai-card border border-slate-200 bg-slate-50 p-6 rounded-2xl flex items-center gap-4">
@@ -41,8 +43,11 @@ I build next-generation AI systems that merge product vision, model design, and 
 
 ---
 
-## 💼 Experience
-<div id="experience" class="grid md:grid-cols-3 gap-6 mt-10">
+
+<h2 class="section-title mt-16 mb-8">
+  💼 Experience
+</h2>
+<div id="experience" class="grid md:grid-cols-3 gap-6 mt-10 place-items-center">
 {% for job in site.data.experience %}
   <div class="ai-card p-8 rounded-3xl shadow-deep text-center flex flex-col items-center justify-between">
     <img src="/assets/icons/{{ job.logo }}" alt="{{ job.company }}" class="w-20 h-20 mb-4 object-contain rounded-lg">
@@ -55,7 +60,9 @@ I build next-generation AI systems that merge product vision, model design, and 
 
 ---
 
-## 🏆 Awards
+<h2 class="section-title mt-16 mb-8">
+  🏆 Awards
+</h2>
 <div id="awards" class="grid md:grid-cols-3 gap-6 mt-10">
 {% for award in site.data.awards %}
   <div class="ai-card p-6 rounded-2xl text-center flex flex-col items-center">
@@ -69,7 +76,10 @@ I build next-generation AI systems that merge product vision, model design, and 
 
 ---
 
-## 🚀 Projects
+
+<h2 class="section-title mt-16 mb-8">
+  🚀 Projects
+</h2>
 <div id="projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
 {% for project in site.data.projects %}
   <div class="ai-card p-6 rounded-2xl overflow-hidden">
