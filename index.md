@@ -11,7 +11,7 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
       <!-- Left: Text Content -->
       <div class="space-y-6 scroll-reveal">
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-slate-900 leading-tight">
-          Hi, I'm <span class="gradient-text">Karthik K</span>
+          Hi, I'm <span class="gradient-text typewriter-text" id="typewriter-name">Karthik K</span>
         </h1>
         
         <p class="text-2xl md:text-3xl text-brand-600 font-semibold">
@@ -276,4 +276,46 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
   document.querySelectorAll('.scroll-reveal').forEach((el) => {
     observer.observe(el);
   });
+  
+  // Recurring Typewriter Effect for Name
+  const typewriterElement = document.getElementById('typewriter-name');
+  const fullText = 'Karthik K';
+  let charIndex = 0;
+  let isDeleting = false;
+  let isPaused = false;
+  
+  function typeWriter() {
+    if (isPaused) {
+      setTimeout(typeWriter, 2000); // Pause for 2 seconds
+      isPaused = false;
+      return;
+    }
+    
+    if (!isDeleting && charIndex <= fullText.length) {
+      // Typing
+      typewriterElement.textContent = fullText.substring(0, charIndex);
+      charIndex++;
+      
+      if (charIndex > fullText.length) {
+        isPaused = true;
+        isDeleting = true;
+      }
+      setTimeout(typeWriter, 150); // Typing speed
+    } else if (isDeleting && charIndex >= 0) {
+      // Deleting
+      typewriterElement.textContent = fullText.substring(0, charIndex);
+      charIndex--;
+      
+      if (charIndex < 0) {
+        isDeleting = false;
+        charIndex = 0;
+        setTimeout(typeWriter, 500); // Pause before restarting
+      } else {
+        setTimeout(typeWriter, 100); // Deleting speed
+      }
+    }
+  }
+  
+  // Start typewriter effect after a short delay
+  setTimeout(typeWriter, 1000);
 </script>
