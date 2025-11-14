@@ -48,7 +48,7 @@ I build next-generation AI systems that merge product vision, model design, and 
   💼 Experience
 </h2>
 
-<div id="experience" class="grid md:grid-cols-3 gap-6 mt-10 justify-items-center">
+<div id="experience" class="flex flex-wrap justify-center gap-6 mt-10">
 {% for job in site.data.experience %}
   <div class="ai-card max-w-sm w-full mx-auto p-8 rounded-3xl shadow-deep text-center flex flex-col items-center justify-between">
     <img src="/assets/icons/{{ job.logo }}" alt="{{ job.company }}" class="w-20 h-20 mb-4 object-contain rounded-lg">
@@ -58,6 +58,7 @@ I build next-generation AI systems that merge product vision, model design, and 
   </div>
 {% endfor %}
 </div>
+
 
 
 ---
