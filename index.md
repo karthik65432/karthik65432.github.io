@@ -162,7 +162,7 @@ title: "Karthik K — GenAI Engineer · Product Manager · Design Thinker"
     <div class="grid md:grid-cols-3 gap-6">
       {% for award in site.data.awards %}
       <div class="modern-card text-center group scroll-reveal">
-        <div class="w-13 h-13 mx-auto mb-6 p-3 bg-white rounded-2xl shadow-glow group-hover:scale-110 transition-transform border-2 border-amber-400">
+        <div class="w-8 h-8 mx-auto mb-6 p-2 bg-white rounded-2xl shadow-glow group-hover:scale-110 transition-transform border-2 border-amber-400">
           <img src="/assets/icons/{{ award.icon }}" 
                alt="{{ award.name }}" 
                class="w-full h-full" 
