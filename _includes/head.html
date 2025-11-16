@@ -3,6 +3,7 @@
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ site.description }}">
 <meta name="theme-color" content="#3b82f6" />
+<meta name="color-scheme" content="light">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,9 +43,19 @@
 </script>
 
 <style>
-  /* Smooth scrolling */
+  /* Prevent dark mode in LinkedIn and other embedded browsers */
   html {
+    color-scheme: light !important;
+    background: #fff !important;
     scroll-behavior: smooth;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html, body {
+      background: #fff !important;
+      color: #000 !important;
+      filter: none !important;
+    }
   }
   
   body {
@@ -148,5 +159,10 @@
   @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: #3b82f6; }
+  }
+  
+  /* Prevent LinkedIn dark mode override */
+  :root {
+    color-scheme: light only;
   }
 </style>
